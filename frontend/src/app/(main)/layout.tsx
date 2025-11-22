@@ -1,5 +1,3 @@
-import "~/styles/globals.css";
-
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Providers } from "~/components/providers";
@@ -12,7 +10,7 @@ import { SidebarInset, SidebarProvider, SidebarTrigger } from "~/components/ui/s
 import { Toaster } from "~/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "AI Music Generator",
   description: "AI Music Generator",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };

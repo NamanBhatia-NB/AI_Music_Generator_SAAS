@@ -1,20 +1,21 @@
 "use client";
 
-import { AccountView } from "@daveyplate/better-auth-ui"
-// import { accountViewPaths } from "@daveyplate/better-auth-ui/server"
-import { ArrowLeftIcon } from "lucide-react"
-import { useRouter } from "next/navigation"
-import { Button } from "~/components/ui/button"
+import { use } from "react";
+import { AccountView } from "@daveyplate/better-auth-ui";
+import { ArrowLeftIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Button } from "~/components/ui/button";
 
-export const dynamicParams = false
+export const dynamicParams = false;
 
-// export function generateStaticParams() {
-//     return Object.values(accountViewPaths).map((path) => ({ path }))
-// }
-
-export default function AccountPage({ params }: { params: { path: string } }) {
-    const { path } = params;
+export default function AccountPage({
+    params,
+}: {
+    params: Promise<{ path: string }>;
+}) {
+    const { path } = use(params);
     const router = useRouter();
+
     return (
         <main className="container flex-grow flex-col items-center justify-center gap-3 self-center p-4 md:p-6">
             {["settings", "security"].includes(path) && (
@@ -29,5 +30,5 @@ export default function AccountPage({ params }: { params: { path: string } }) {
             )}
             <AccountView path={path} />
         </main>
-    )
+    );
 }
