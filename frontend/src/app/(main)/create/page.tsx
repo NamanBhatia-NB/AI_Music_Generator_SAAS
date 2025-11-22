@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import { Loader2 } from "lucide-react";
 import TrackListFetcher from "~/components/create/track-list-fetcher";
 
-export default async function HomePage() {
+export default async function Page() {
   const session = await auth.api.getSession({
     headers: await headers(),
   });

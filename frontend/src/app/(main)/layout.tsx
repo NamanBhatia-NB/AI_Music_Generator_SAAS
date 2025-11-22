@@ -3,16 +3,16 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Providers } from "~/components/providers";
-import { Toaster } from "~/components/ui/sonner";
-import { SidebarInset, SidebarProvider, SidebarTrigger } from "~/components/ui/sidebar";
 import { AppSidebar } from "~/components/sidebar/app-sidebar";
-import { Separator } from "~/components/ui/separator";
-import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "~/components/ui/breadcrumb";
 import BreadcrumbPageClient from "~/components/sidebar/breadcrumb-page-client";
 import SoundBar from "~/components/sound-bar";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbList } from "~/components/ui/breadcrumb";
+import { Separator } from "~/components/ui/separator";
+import { SidebarInset, SidebarProvider, SidebarTrigger } from "~/components/ui/sidebar";
+import { Toaster } from "~/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "AI Music Generator",
+  title: "Home",
   description: "AI Music Generator",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
