@@ -2,7 +2,7 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
-import { Providers } from "~/components/providers";
+import Providers from "~/components/providers";
 import { AppSidebar } from "~/components/sidebar/app-sidebar";
 import BreadcrumbPageClient from "~/components/sidebar/breadcrumb-page-client";
 import SoundBar from "~/components/sound-bar";

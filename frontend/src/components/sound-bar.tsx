@@ -105,7 +105,7 @@ export default function SoundBar() {
     return (
         <div className="px-4 pb-2">
             <Card className="bg-background/60 relative w-full shrink-0 border-t py-0 backdrop-blur">
-                <div className="space-y-2 py-3">
+                <div className="space-y-2 p-3">
                     <div className="flex items-center justify-between">
                         <div className="flex min-w-0 flex-1 items-center gap-2">
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-purple-500 to-pink-500 ">
@@ -139,6 +139,7 @@ export default function SoundBar() {
                                 <Slider
                                     value={volume}
                                     onValueChange={setVolume}
+
                                     step={1}
                                     max={100}
                                     min={0}
